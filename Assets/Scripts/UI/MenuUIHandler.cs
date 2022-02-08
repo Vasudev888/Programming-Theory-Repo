@@ -20,10 +20,6 @@ public class MenuUIHandler : MonoBehaviour
         
     }
 
-    private void Start()
-    {
-        userNameText.text = inputField.text;
-    }
 
     public void StartGame()
     {

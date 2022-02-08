@@ -389,8 +389,7 @@ MonoBehaviour:
   volume: 0
   weight: 0
   position: {x: 0, y: 0, z: 0}
-  color: {r: 0, g: 0, b: 0, a: 0}
-  timeToWait: 0.5
+  timeToWait: 0.2
   textPanel: {fileID: 1751501334}
   textinfo: {fileID: 1565061123}
 --- !u!1 &757825540
@@ -1231,7 +1230,6 @@ MonoBehaviour:
   volume: 0
   weight: 0
   position: {x: 0, y: 0, z: 0}
-  color: {r: 0, g: 0, b: 0, a: 0}
   timeToWait: 0.2
   textPanel: {fileID: 915887745}
   textInfo: {fileID: 2101179635}
@@ -1429,7 +1427,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.9433962, g: 0.057849795, b: 0.057849795, a: 1}
+  m_Color: {r: 0.1018155, g: 0.94509804, b: 0.058823526, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1438,11 +1436,11 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 30
+    m_FontSize: 50
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 2
-    m_MaxSize: 40
+    m_MaxSize: 50
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -1547,7 +1545,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1667733982}
   - component: {fileID: 1667733981}
-  - component: {fileID: 1667733983}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -1582,18 +1579,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1667733983
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1667733980}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c31182e6045707943a9eeb68e96098f9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1745120790
 GameObject:
   m_ObjectHideFlags: 0
@@ -1622,7 +1607,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1745120790}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.06, z: 0}
+  m_LocalPosition: {x: 0, y: 1.06, z: -1.9}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children: []
   m_Father: {fileID: 1451851245}
@@ -1660,7 +1645,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 2246cfa6aeaea86419cdfc17a5ac9479, type: 2}
+  - {fileID: 2100000, guid: c1de6fe5d911ee5449fe524929dfbe50, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1705,7 +1690,6 @@ MonoBehaviour:
   volume: 0
   weight: 0
   position: {x: 0, y: 0, z: 0}
-  color: {r: 0, g: 0, b: 0, a: 0}
   timeToWait: 0.2
   textPanel: {fileID: 2056367027}
   textInfo: {fileID: 1747192107}
@@ -1759,7 +1743,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.9433962, g: 0.057849795, b: 0.057849795, a: 1}
+  m_Color: {r: 0, g: 0, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1768,11 +1752,11 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 30
+    m_FontSize: 50
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 2
-    m_MaxSize: 40
+    m_MaxSize: 50
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -2149,11 +2133,11 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 30
+    m_FontSize: 50
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 2
-    m_MaxSize: 40
+    m_MaxSize: 50
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1

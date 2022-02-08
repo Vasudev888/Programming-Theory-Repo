@@ -1,16 +1,16 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 
 public class Shapes : MonoBehaviour
 {
-    public string colorName { get; set; }
-    public string shapeName { get; set; }
     public float volume;
     public float weight;
     public Vector3 position;
-    public Color color;
+    /*public string colorName;*/
+    public string shapeName { get; set; }
+    public Color shapeColor { get; set; }
 
     [SerializeField]
     private float timeToWait = 0.2f;
@@ -27,15 +27,15 @@ public class Shapes : MonoBehaviour
     public virtual void DisplayText()
     {
         shapeName = name;
-        color = GetComponent<Renderer>().material.color;
+        shapeColor = GetComponent<Renderer>().material.color;
     }
 
-    public string GetColor(string _color)
+/*    public string GetColor(string _color)
     {
         this.colorName = _color;
         return colorName;
     }
-
+*/
 
     public IEnumerator DelayPanel(GameObject panel)
     {
@@ -44,11 +44,17 @@ public class Shapes : MonoBehaviour
         panel.SetActive(true);
     }
 
+    /// <summary>
+    /// Check whether the color we are passing in is equals to one of the colors we are checking against.
+    /// If it is, return the name of the color in string format
+    /// </summary>
+    /// <param name="color">The color that we want to compare</param>
+    /// <returns>The name of the color</returns>
 
     public string GetShapeColor(Color color)
     {
-        colorName = string.Empty;
-
+        string colorName = string.Empty;
+        
         if(color == Color.red)
         {
             colorName = "Red";
@@ -57,12 +63,20 @@ public class Shapes : MonoBehaviour
         {
             colorName = "Green";
         }
-        else if(color == Color.yellow)
+        else if (color == Color.blue)
+        {
+            colorName = "Blue";
+        }
+
+        else if (color == Color.yellow)
         {
             colorName = "Yellow";
         }
 
         return colorName;
+       
     }
+
+
 
 }

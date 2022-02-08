@@ -25,11 +25,6 @@ public class MainManager : MonoBehaviour
         LoadName();
     }
 
-    private void Start()
-    {
-        displayName.text = userName;
-    }
-
     [System.Serializable]
     class SaveData
     {

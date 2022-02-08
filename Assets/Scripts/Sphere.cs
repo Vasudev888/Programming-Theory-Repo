@@ -30,7 +30,7 @@ public class Sphere : Shapes
         base.DisplayText();
 
         strName = shapeName;
-        _color = color;
+        _color = shapeColor;
 
         textInfo.text = "This is : " + strName + "\n Color is : " + GetShapeColor(_color);
     }

@@ -29,7 +29,7 @@ public class Capsule : Shapes
     {
         base.DisplayText();
         strName = name;
-        _color = color;
+        _color = shapeColor;
 
         textInfo.text = "This is  : " + name + "\nColour is : " + GetShapeColor(_color);
     }

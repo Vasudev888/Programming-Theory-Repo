@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -33,8 +31,7 @@ public class Cube : Shapes
         base.DisplayText();
 
         strName = shapeName;
-        _color = color;
-        Debug.Log("color name" + GetShapeColor(_color));
+        _color = shapeColor;
         textinfo.text = "This is : " + strName + " \nColor is  : " + GetShapeColor(_color);
     }
 }
